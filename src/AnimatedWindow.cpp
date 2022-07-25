@@ -6,8 +6,7 @@
 
 namespace fgcu {
 
-
-    AnimatedWindow::AnimatedWindow(unsigned int  width, unsigned int  height, std::string &title, sf::Uint32 style, const sf::ContextSettings& settings)
+    AnimatedWindow::AnimatedWindow(unsigned int  width, unsigned int  height, std::string title, sf::Uint32 style, const sf::ContextSettings& settings)
     {
         create(width, height, title, style, settings);
     }
@@ -34,8 +33,12 @@ namespace fgcu {
         m_color = sf::Color(color);
     }
 
-    unsigned int AnimatedWindow::getColor() const {
-        return m_color.toInteger();
+    void AnimatedWindow::setColor(sf::Color color) {
+        m_color = color;
+    }
+
+    sf::Color AnimatedWindow::getColor() const {
+        return m_color;
     }
 
     void AnimatedWindow::setFPS(const int fps) {

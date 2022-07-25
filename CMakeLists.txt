@@ -24,7 +24,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../lib)
 
 add_library(eagles src/Random.cpp
         src/Bounds.cpp
-        src/Animator.cpp
         src/AnimatedShape.cpp
         src/AnimatedRectangle.cpp
         src/AnimatedCircle.cpp

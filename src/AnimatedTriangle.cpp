@@ -6,6 +6,8 @@
 
 namespace fgcu {
 
+    AnimatedTriangle::AnimatedTriangle() : AnimatedShape() {}
+
     AnimatedTriangle::AnimatedTriangle(float width, float height) {
         setSize(sf::Vector2f(width, height));
     }

@@ -16,11 +16,11 @@ namespace fgcu {
         /// Construct an equilateral triangle given the base=width and height as float values.
         /// \param width The length of the base of the triangle.
         /// \param height The length of the height of the triangle.
-        explicit AnimatedTriangle(float width=0, float height=0);
+        explicit AnimatedTriangle(float width, float height);
 
         /// Construct an equilateral triangle given the base=width and height as float values.
         /// \param size the length of the base and height of the triangle are provided in an (x,y) sf::Vector2f structure.
-        explicit AnimatedTriangle(const sf::Vector2f& size = sf::Vector2f(0, 0));
+        explicit AnimatedTriangle(const sf::Vector2f& size);
 
         /// Alter the size of the triangle.
         /// \param width The new length of the base of the triangle.

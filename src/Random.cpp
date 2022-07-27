@@ -7,6 +7,11 @@
 
 namespace fgcu {
 
+    Random::Random() {
+        initInt_ = false;
+        initReal_ = false;
+    };
+
     Random::Random(int from, int to, std::string seed) {
         defEngine_ = std::default_random_engine(std::chrono::system_clock::now().time_since_epoch().count());
         if (!seed.empty()) {

@@ -7,6 +7,21 @@
 
 namespace fgcu {
 
+    Bounds::Bounds() {
+        x = 0.0;
+        y = 0.0;
+        originX = 0.0;
+        originY = 0.0;
+        width = 0.0;
+        height = 0.0;
+        left = 0.0;
+        right = 0.0;
+        top = 0.0;
+        bottom = 0.0;
+        center = 0.0;
+        middle = 0.0;
+    };
+
     Bounds::Bounds(sf::FloatRect bounds, sf::Vector2f position) {
         x = position.x;
         y = position.y;

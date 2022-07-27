@@ -15,14 +15,17 @@ namespace fgcu {
     /// fgcu::AnimatedRectangle extends fgcu::AnimatedShape which provides for animation speeds and visibility, and gets all properties and methods of a sf::Shape.
     class AnimatedRectangle : public fgcu::AnimatedShape {
     public:
+        /// Default construct.
+        AnimatedRectangle();
+
         /// Construct a rectangle given width and height float values.
         /// \param width The horizontal width of the shape.
         /// \param height The vertical height of the shape.
-        explicit AnimatedRectangle(float width, float height);
+        AnimatedRectangle(float width, float height);
 
         /// Construct a rectangle given width and height values as an (x,y) pair of floats in a sf::Vector2f structure.
         /// \param size The horizontal width and vertical height as an (x,y) pair of floats in a sf::Vector2f structure.
-        explicit AnimatedRectangle(const sf::Vector2f& size = sf::Vector2f(0, 0));
+        AnimatedRectangle(const sf::Vector2f& size);
 
         /// Alter the size of a rectangle given width and height float values.
         /// \param width The horizontal width of the shape.

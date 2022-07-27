@@ -6,6 +6,8 @@
 
 namespace fgcu {
 
+    AnimatedRectangle::AnimatedRectangle() : AnimatedShape() {};
+
     AnimatedRectangle::AnimatedRectangle(float width, float height) {
         setSize(sf::Vector2f(width, height));
     }

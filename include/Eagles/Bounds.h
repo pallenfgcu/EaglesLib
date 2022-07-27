@@ -23,6 +23,10 @@ namespace fgcu {
     /// The screen (x,y) location used to position the rectangle may be the (left,top) or may be adjusted by origin properties that provide offsets to the (x,y) properties.
     class Bounds {
     public:
+
+        /// Default construct.
+        Bounds();
+
         /// Construct a bounding rectangle.
         /// \param bounds The width and height of the rectangle.
         /// \param position The (x,y) position of the rectangle.

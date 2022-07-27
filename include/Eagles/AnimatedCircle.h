@@ -16,10 +16,13 @@ namespace fgcu {
 
     class AnimatedCircle : public AnimatedShape {
     public:
+        /// Default construct.
+        AnimatedCircle();
+
         /// Construct a circle given a radius. Each point of the circle is calculated as a distance around the circle evenly divided by a number of points.
         /// \param radius The radius of the circle.
         /// \param pointCount The number of points on the outside of the circle. The default is 30 points.
-        explicit AnimatedCircle(float radius = 0, std::size_t pointCount = 30);
+        explicit AnimatedCircle(float radius, std::size_t pointCount = 30);
 
         /// Alter the radius of the circle.
         /// \param radius The new radius of the circle.

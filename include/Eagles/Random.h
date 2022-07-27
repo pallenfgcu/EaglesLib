@@ -17,6 +17,10 @@ namespace fgcu {
     /// Utility class implements the std::Random library methods to generate a uniform-distribution random number generator for integers and doubles.
     class Random {
     public:
+
+        /// Default construct.
+        Random();
+
         /// Construct a random number generator for integers.
         /// \param from The minimum starting value.
         /// \param to The maximum value.

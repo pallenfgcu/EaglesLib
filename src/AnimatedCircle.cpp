@@ -6,6 +6,9 @@
 #include <cmath>
 
 namespace fgcu {
+
+    AnimatedCircle::AnimatedCircle() : AnimatedShape(){};
+
     AnimatedCircle::AnimatedCircle(float radius, std::size_t pointCount) :
     m_radius(radius),
     m_pointCount(pointCount)

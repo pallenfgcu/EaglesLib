@@ -60,7 +60,7 @@ namespace fgcu {
     }
 
     void Bounds::alignMiddle(fgcu::Bounds& other) {
-        top = other.center - height / 2.0f;
+        top = other.middle - height / 2.0f;
         y = top + originY;
     }
 

@@ -7,7 +7,10 @@
 
 namespace fgcu {
 
-    AnimatedCircle::AnimatedCircle() : AnimatedShape(){};
+    AnimatedCircle::AnimatedCircle() : AnimatedShape(){
+        m_radius = 0;
+        m_pointCount = 30;
+    };
 
     AnimatedCircle::AnimatedCircle(float radius, std::size_t pointCount) :
     m_radius(radius),

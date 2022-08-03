@@ -113,7 +113,7 @@ namespace fgcu {
         sf::Vector2f closest = closestPoint(other, fromCenter);
 
         float diffX = closest.x - thisX;
-        float diffY = closest.y = thisY;
+        float diffY = closest.y - thisY;
 
         float distance = std::sqrt(std::pow(diffX, 2.0f) + std::pow(diffY, 2.0f));
 
